@@ -39,8 +39,8 @@ html, body {
 
 body {
     background-color: burlywood;
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
-}
+    /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);*/
+} 
 
 section {
     display: flex;
