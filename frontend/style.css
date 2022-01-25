@@ -62,7 +62,7 @@ body {
 }
 
 .groupImages {
-  margin-top: 5%;
+  margin-top: 2%;
   /* margin-bottom: 4%; */
 }
 
@@ -72,7 +72,7 @@ body {
 
 .groupImages a, .groupImages2 a {
   text-align: center;
-  width: 320px;
+  width: 370px;
   transition: 0.5s ease;    /*Img grow in 0.5s then slowly fades out */
 }
 
@@ -109,28 +109,32 @@ a:hover .nameTextBori, a:hover .nameTextAndras, a:hover .nameTextBeno, a:hover .
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-200%, -150%);
+  transform: translate(-210%, -180%);
+  transition: .5s ease;
 }
 
 .nameTextAndras {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(85%, -150%);
+  transform: translate(92%, -180%);
+  transition: .5s ease;
 }
 
 .nameTextBeno {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-190%, 30%);
+  transform: translate(-195%, 60%);
+  transition: .5s ease;
 }
 
 .nameTextKrisz {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(63%, 30%);
+  transform: translate(70%, 60%);
+  transition: .5s ease;
 }
 
 .groupName h1 {
@@ -138,9 +142,6 @@ a:hover .nameTextBori, a:hover .nameTextAndras, a:hover .nameTextBeno, a:hover .
   padding-left: 5%;
   padding-right: 5%;
   color: #4b8aa3;
-  border: 10px dashed #4b8aa3;
-  background-color: #c5e7f5;
-  border-radius: 10px;
 }
 
 .unknownGroup {
