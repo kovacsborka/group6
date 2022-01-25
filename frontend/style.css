@@ -51,7 +51,7 @@ body {
   position: relative;     /*Make content appear above video*/
 }
 
-.groupName, .groupImages, .unknownGroup {
+.groupName, .groupImages, .unknownGroup, .groupImages2{
   display: flex;
   flex-wrap: wrap;    /*Resizing window puts the images after each other*/
   align-items: center;
@@ -62,20 +62,21 @@ body {
 }
 
 .groupImages {
-  margin-top: 10%;
-  margin-bottom: 4%;
+  margin-top: 5%;
+  /* margin-bottom: 4%; */
 }
 
+.groupImages, .groupImages2 {
+  justify-content: space-around;
+}
 
-.groupImages a {
+.groupImages a, .groupImages2 a {
   text-align: center;
   width: 320px;
   transition: 0.5s ease;    /*Img grow in 0.5s then slowly fades out */
 }
 
-.groupImages img {
-  /*height: 60%;
-  width: 60%;*/
+.groupImages img, .groupImages2 img {
   max-width: 90%;
   height: auto;
   border-radius: 50%;
@@ -89,35 +90,62 @@ a:hover {
   transform: scale(1.2);
 }
 
-a:hover .nameText {
+a:hover .nameTextBori, a:hover .nameTextAndras, a:hover .nameTextBeno, a:hover .nameTextKrisz {
   opacity: 1;
   transition: 0.5s;
+  text-decoration: underline;
 }
 
-.nameText {
+.nameTextBori, .nameTextAndras, .nameTextBeno, .nameTextKrisz {
   font-size: 45px;
-  color: white;
+  letter-spacing: 8px;
+  color: #4b8aa3;
   font-weight: bold;
   /* transition: .5s ease; */
   opacity: 0;
+}
+
+.nameTextBori {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 8px;
+  transform: translate(-200%, -150%);
+}
+
+.nameTextAndras {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(85%, -150%);
+}
+
+.nameTextBeno {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-190%, 30%);
+}
+
+.nameTextKrisz {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(63%, 30%);
 }
 
 .groupName h1 {
   font-size: 100px;
-  /* border: 15px solid black; */
-  border-style: double;
-  padding-left: 18%;
-  padding-right: 18%;
+  padding-left: 5%;
+  padding-right: 5%;
   color: #4b8aa3;
+  border: 10px dashed #4b8aa3;
+  background-color: #c5e7f5;
+  border-radius: 10px;
 }
 
 .unknownGroup {
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .unknownGroup a {
@@ -222,7 +250,7 @@ a:hover .nameText {
 }
 
 .virag {
-  ;
+  
 }
 
 .bodyAndras {
