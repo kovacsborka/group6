@@ -7,9 +7,10 @@
   background: transparent;
   font-family: inherit;
 }
-a{
+a {
   text-decoration: none;
 }
+
 a img {
   border: none;
 }
@@ -33,49 +34,110 @@ select {
 
 /*CSS RESET END*/
 
+
 html, body {
-    height: 100vh;
+  height: 75vh;
 }
 
 body {
-    background-color: burlywood;
-    /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);*/
+  /* background-color: rgb(84, 189, 163); */
+  /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+  background-image: url("Images/background_fabric.png");
+  font-family: 'Tajawal', sans-serif;
+  letter-spacing: 10px;
 } 
 
-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    margin-left: 5%;
-    margin-right: 5%;
+#root {
+  position: relative;     /*Make content appear above video*/
+}
+
+.groupName, .groupImages, .unknownGroup {
+  display: flex;
+  flex-wrap: wrap;    /*Resizing window puts the images after each other*/
+  align-items: center;
+  justify-content: center;  
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .groupImages {
-    margin-top: 10%;
-    margin-bottom: 4%;
+  margin-top: 10%;
+  margin-bottom: 4%;
 }
 
-.groupName {
-    border: 5px solid black;
-    border-style: double;
+
+.groupImages a {
+  text-align: center;
+  width: 320px;
+  transition: 0.5s ease;    /*Img grow in 0.5s then slowly fades out */
 }
 
-a {
-    text-align: center;
+.groupImages img {
+  /*height: 60%;
+  width: 60%;*/
+  max-width: 90%;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;    
+  border: 5px solid #4b8aa3; 
 }
 
-img {
-    /*height: 60%;
-    width: 60%;*/
-    max-width: 80%;
-    height: auto;
-    border-radius: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
+a:hover {
+  opacity: 0.8;   
+  transform: scale(1.2);
 }
 
-h1 {
-    font-size: 100px;
-    font-family: 'Tajawal', sans-serif;;
-    letter-spacing: 15px;
+a:hover .nameText {
+  opacity: 1;
+  transition: 0.5s;
 }
+
+.nameText {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+  /* transition: .5s ease; */
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 8px;
+}
+
+.groupName h1 {
+  font-size: 100px;
+  /* border: 15px solid black; */
+  border-style: double;
+  padding-left: 18%;
+  padding-right: 18%;
+  color: #4b8aa3;
+}
+
+.unknownGroup {
+  margin-top: 20px;
+}
+
+.unknownGroup a {
+  text-align: center;
+  transition: 0.5s ease; 
+}
+
+.unknownGroup button{
+  font-size: 20px;
+  font-weight: bold;
+  color: #4b8aa3;
+}
+
+/*---------------------Video background css start----------------------*/
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*---------------------Video background css end----------------------*/
