@@ -44,7 +44,7 @@ body {
   /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
   background-image: url("Images/background_fabric.png");
   font-family: 'Tajawal', sans-serif;
-  letter-spacing: 10px;
+  
 } 
 
 #root {
@@ -58,6 +58,7 @@ body {
   justify-content: center;  
   margin-left: 5%;
   margin-right: 5%;
+  letter-spacing: 10px;
 }
 
 .groupImages {
@@ -141,3 +142,90 @@ a:hover .nameText {
 }
 
 /*---------------------Video background css end----------------------*/
+
+
+/*---------------------Subpages css start----------------------*/
+
+.subpageDiv {
+  font-family: 'Times New Roman', sans-serif !important;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.subpageMain {
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;    /*Resizing window puts the images after each other*/
+  justify-content: center;
+}
+
+.subpageImage {
+  align-self: center;
+  width: 600px;
+  text-align: center;
+}
+
+.subpageImage img{
+  max-width: 500px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;    
+  border: 5px solid #4b8aa3; 
+}
+
+.subpageText {
+  width: 1200px;
+  text-align: center;
+}
+
+.subpageText ul {
+  margin-top: 30px;
+  list-style-position: outside;
+}
+
+.subpageText li {
+  text-align: left;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.subpageText h1 {
+  font-size: 50px;
+}
+
+.kriszBody {
+  background-color: rgb(107, 146, 161);
+}
+
+.kriszBody .logoPear{
+  display: flex;
+  justify-content: center;
+}
+
+.kriszBody .subpageText img{
+  width: 40px;
+  height: 40px;
+}
+
+.kriszBody ul{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.kriszBody li{
+  padding-top: 20px;
+}
+
+.subpageBorka {
+  background-color: #EFDAD7;
+}
+
+.virag {
+  ;
+}
+
+.bodyAndras {
+  background-color: rgb(157, 70, 13);
+}
+/*----------------------Subpages css end-----------------------*/
