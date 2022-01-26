@@ -238,7 +238,7 @@ a:hover .nameText {
 .kriszBody li{
   padding-top: 20px;
   transition: 1s ease;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .kriszBody li:hover{
@@ -257,6 +257,10 @@ justify-content: center;
 .virag img{
   height: 40px;
   width: 40px;
+  align-self: center;
+}
+
+.virag a{
   align-self: center;
 }
 
@@ -289,6 +293,17 @@ justify-content: center;
   border: 5px solid #f3e35b
 }
 
+.bodyAndras .logoHold{
+  display: flex;
+  justify-content: center;
+}
+
+.bodyAndras .logoHold img{
+  align-self: center;
+  width: 40px;
+  height: 40px;
+}
+
 .bodyAndras li{
   transition: 1s ease;
 }
@@ -314,14 +329,12 @@ justify-content: center;
 }
 
 .subpageTextBeno {
-  margin-top: 20px;
   text-align: center;
-  
   width: 1200px;
   text-align: center;
   font-family: 'Rajdhani', sans-serif;
   font-weight: bold;
-  font-size: 25px;
+  padding-left: 30px;
 }
 
 .subpageImage1Beno {
@@ -336,13 +349,17 @@ justify-content: center;
 }
 .subpageTextBeno ul {
   padding: 10px;
-  list-style-position: outside;
 }
 .subpageTextBeno li {
   text-align: left;
   margin-left: 50px;
-  padding: 5px;
-  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 25px;
+  transition: 0.5s ease;
+}
+.subpageTextBeno li:hover{
+  transform: scale(1.1);
 }
 
 .subpageTextBeno img {
@@ -356,18 +373,48 @@ justify-content: center;
 
 /*----------------------Group 3 css start-----------------------*/
 
+.g3Div {
+  margin-top: 5vh;
+}
+
+.g3Main1 {
+  margin-bottom: 100px;
+}
+
 .g3Main1, .g3Main2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
+.g3Main1 li, .g3Main2 li{
+  padding-top: 30px
+}
+
+.g3Image {
+  align-items: center;
+}
+
+.g3Text {
+  width: 400px;
+  align-self: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+
+}
+
+.g3Body {
+  background-color: rgb(63, 173, 122);
+}
+
 .g3Image img{
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   margin-left: 10px;
   margin-right: 10px;    
-  border: 5px solid #4b8aa3; 
+  border: 5px solid #033c06; 
 }
 
 
